@@ -13,7 +13,7 @@ jobs:
         working-directory: ${{ github.workspace }}/nodejs-npm
     
     env:
-      BRIDGE_BLACKDUCKSCA_URL: ${{ vars.BLACKDUCK_URL }}
+      BRIDGE_BLACKDUCKSCA_URL: ${{ secrets.BLACKDUCK_URL }}
       BRIDGE_BLACKDUCKSCA_TOKEN: ${{ secrets.BLACKDUCK_TOKEN }}
       BRIDGE_GITHUB_USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       BRIDGE_GITHUB_REPOSITORY_OWNER_NAME: ${{ github.repository_owner }}
