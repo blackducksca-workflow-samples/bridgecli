@@ -25,6 +25,7 @@ jobs:
       BRIDGE_BLACKDUCKSCA_REPORTS_SARIF_CREATE: "true"
       BRIDGE_DOWNLOAD_URL: https://repo.blackduck.com/bds-integrations-release/com/blackduck/integration/bridge/binaries/bridge-cli-bundle/latest
       BRIDGE_PROJECT_DIRECTORY: ${{ github.workspace }}/nodejs-npm
+      DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
       
     steps:
     - name: Checkout Source
